@@ -1,0 +1,1 @@
+This project allows users to play the scissors paper rock game.
