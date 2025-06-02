@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+    <p>Best out of 5 points wins the game!</p>
+    
+    <div class="choices">
+      <button class="choice-btn" data-choice="rock">✊</button>
+      <button class="choice-btn" data-choice="paper">✋</button>
+      <button class="choice-btn" data-choice="scissors">✌️</button>
+    </div>
+    
+    <div class="results">
+      <div class="round-result" id="roundResult"></div>
+      <div class="scores">
+        <div>You: <span class="score" id="humanScore">0</span></div>
+        <div>Computer: <span class="score" id="computerScore">0</span></div>
+      </div>
+      <div class="final-result" id="finalResult"></div>
+    </div>
+    
+    <button class="reset-btn" id="resetBtn">Reset Game</button>
+    
+    <div class="game-history">
+      <div class="history-title">Game History:</div>
+      <ul class="history-list" id="historyList"></ul>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
